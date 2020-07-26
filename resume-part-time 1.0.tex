@@ -1,0 +1,148 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Mohammed Niaz Ul Haque}}\\
+	Toronto, ON $\cdot$ theniaz619@gmail.com $\cdot$ (647) 657-6450 $\cdot$ github.com/Niaz-Ul-Haque\\
+\end{center}
+%==== Summary ====%
+
+\text To obtain part time employment, I would welcome a rewarding and challenging job that not only involves my current skills, but will hopefully help me acquire some new ones. Rich capability to manage and communicate the thing and in depth knowledge of maintaining the productive relation with the client. Strong work ethics with remarkable customer handling skills. Proficient in executing the programs using the limited resources and able to work in flexible timings.\\
+\vspace{2mm}
+%==== Education ====%
+{\large\header{Education}}
+\textbf{Seneca College} - Newnham Campus\hfill Toronto, ON\\
+{Advanced Diploma} Computer Programming and Analysis \hfill Jan 2019 - Current\\
+
+
+\vspace{2mm}
+
+%==== Experience ====%
+{\large\header{Work History}}
+\vspace{0.6mm}
+
+\textbf{Private Tutor} \hfill Riyadh, KSA\\
+\textit{Self-Employed} \hfill May 2015 - Dec 2018\\\vspace*{0.5mm}
+$\cdot$ Broke down {\textbf{complicated}} concepts into simple, easy to understand steps.\\
+$\cdot$ Gave advice on best practices and how to tackle questions that seemed difficult.
+\vspace*{2mm}
+
+\textbf{Procurement Supervisor} \hfill Riyadh, KSA\\
+\textit{Wadi Grocery} \hfill Jan 2018 - Aug 2018\\\vspace*{0.5mm}
+$\cdot$ Promoted to Supervisor because of excellent {\textbf{communication}} skills and team management.\\
+$\cdot$ Implemented various ways to remove repetitive tasks to increase the team’s {\textbf{productivity}}.\\
+$\cdot$ Dealt with various customers and oversaw the {\textbf{database}} of the employees daily in a specific branch.
+\vspace*{2mm}
+
+\textbf{Inbound Receiver} \hfill Riyadh, KSA\\
+\textit{Jollychic} \hfill Sept 2018 - Dec 2018\\\vspace*{0.5mm}
+$\cdot$ Was in charge of receiving shipments all around from Saudi Arabia and store it onto the Database.\\
+$\cdot$ Dealt with all types of products from apparels, toys, electronics, etc.\\
+$\cdot$ Solved complex issues by breaking it down into smaller parts ad by participating in daily meetings.
+\vspace*{2mm}
+
+
+{\large\header{Skills}}\vspace{1mm}
+\begin{tabular}{ l l  }
+	Language/Technology: & Java, JavaScript, C++, C, SQL, HTML5, CSS3, TypeScript  \\
+	Library/Framework:   & React, Angular, Express, jQuery, MomentJS, Lodash, MaterialUI \\
+	Tools/OS:               & Git, Postman, Eclipse, Visual Studio, SQL Developer, Linux/UNIX  \\
+	Database Engines:      & Oracle, SQL Server, MongoDB (Atlas), Firebase                            \\
+	Professional:      & Full Stack, Software Development Life Cycle, Database Design/Development 
+                            \\
+\end{tabular}
+\vspace{0.3mm}
+
+{\large\header{Projects}}\vspace{0.3mm}
+{\textbf{LendAHand}} {\sl NodeJS, ExpressJS, Firebase, Bootstrap3} \hfill WinHacks2020\\
+$\cdot$ Developed an online blog where teenagers can volunteer and help those who are elderly, injured, or sick to gain some mobility in this pandemic and beyond.\\
+$\cdot$ Created {\textbf{Authorization/Authentication}} module to ensure security.\\
+$\cdot$ Users are rewarded with volunteer hours after a task is completed.\\
+\vspace*{2mm}
+
+{\textbf{We-Ar}} {\sl NodeJS, ExpressJS, MongoDB, Bootstrap3, WeatherAPI} \hfill NewHacks2020\\
+$\cdot$ Participated in the University of Torontos NewHacks2020 Hackathon and finished as a runner-up in
+the best WebHack category\\
+$\cdot$ Developed a cloth matching web app using {\textbf{ExpressJS}} and {\textbf{MongoDB}} as a database to store the user's preference and suggest different clothing choices.\\
+$\cdot$ The data from the {\textbf{WeatherAPI}} was used to predict the weather and the outfit that will be the most comfortable for the day.\\
+
+\vspace*{2mm}
+
+{\textbf{COVID-Tracker}} {\sl ReactJS, NodeJS, MaterialUI, SCSS, ChartsJS} \hfill Custom\\
+$\cdot$ Developed a COVID-19 Tracker/Stats Application using React with the addition of {\textbf{ChartsJS}}, {\textbf{MaterialUI}}, and many other modules.\\ $\cdot$ Data of {\textbf{250+}} countries is fetched from the COVID-19API using the {\textbf{Async/Await}} syntax and {\textbf{React Hooks}}, and statistics is displayed in cards as well as in charts.\\
+\vspace*{2mm}
+
+
+
+\ 
+\end{document}
